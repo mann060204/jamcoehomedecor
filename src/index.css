@@ -1,0 +1,340 @@
+@import "tailwindcss";
+
+/* *{  margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
+
+.roboto-<uniquifier > {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  background: #f1f5f9;
+  color: #3e3e3e;
+  overflow-x: hidden;
+}
+
+p{
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: 600;
+}
+
+.btn-org{
+    background: #2d4739 !important;
+    color: #fff !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    padding: 7px 20px !important;
+}
+
+.btn-org:hover{
+  background-color: #E6F2EC !important;
+  color:#2d4739 !important;
+}
+
+.btn-lg{
+  font-size: 16px !important;
+    padding: 10px 20px !important;
+}
+
+.sliderHome {
+  overflow: inherit !important;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+.link:hover {
+  color: #2d4739;
+}
+
+@theme {
+  --color-primary: #2d4739;
+}
+
+.MuiBadge-badge {
+  background-color: #2d4739 !important;
+}
+
+nav ul button {
+  text-transform: capitalize !important;
+}
+
+nav ul button:hover {
+  background: none !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2d4739;
+}
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 22px !important;
+  color: black;
+}
+
+.smlBtn .swiper-button-prev,
+.smlBtn .swiper-button-next {
+  width: 30px !important;
+  height: 30px !important;
+  min-width: 30px !important;
+  top: 50% !important;
+}
+
+.smlBtn .swiper-button-prev:after,
+.smlBtn .swiper-button-next:after {
+  font-size: 18px !important;
+  color: black;
+}
+
+.homeCatSlider {
+  overflow: inherit !important;
+}
+
+.homeCatSlider .swiper-button-prev {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+}
+
+.homeCatSlider .swiper-button-prev:after {
+  font-size: 16px !important;
+}
+
+.homeCatSlider .swiper-button-next {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+}
+
+.homeCatSlider .swiper-button-next:after {
+  font-size: 16px !important;
+}
+
+.homeCatSlider .item {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.homeCatSlider .swiper-button-prev:hover,
+.homeCatSlider .swiper-button-next:hover {
+  background: #2d4739 !important;
+}
+
+.homeCatSlider .swiper-button-prev:hover::after,
+.homeCatSlider .swiper-button-next:hover::after {
+  color: #fff !important;
+}
+
+.homeCatSlider .item:hover img {
+  transform: scale(1.1);
+}
+
+.adsbanner .swiper-button-prev:hover,
+.adsbanner .swiper-button-next:hover {
+  background: #2d4739 !important;
+}
+
+.adsbanner .swiper-button-prev:hover::after,
+.adsbanner .swiper-button-next:hover::after {
+  color: #fff !important;
+}
+
+.MuiTabs-indicator {
+  background-color: #2d4739 !important;
+}
+
+.MuiTab-textColorPrimary.Mui-selected {
+  color: #2d4739 !important;
+}
+
+.productsSlider .swiper-wrapper {
+  padding: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.productsSlider .swiper-button-prev:hover,
+.productsSlider .swiper-button-next:hover {
+  background: #2d4739 !important;
+}
+
+.productsSlider .swiper-button-prev:hover::after,
+.productsSlider .swiper-button-next:hover::after {
+  color: #fff !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #2d4739 !important;
+}
+.swiper-button-next:hover::after,
+.swiper-button-prev:hover::after {
+  color: #fff !important;
+}
+
+footer form input::placeholder{font-size: 14px;}
+
+.css-imrjgg-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, .css-imrjgg-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate{
+     color: #2d4739 !important;
+}
+
+.MuiFormControlLabel{
+    font-size: 13px !important;
+    color: #2d4739;
+}
+
+.swiper-pagination-bullet-active{
+  background: #2d4739 !important;
+}
+
+.homeSliderV2 .swiper-slide-active .info{
+  right:0px !important;
+  opacity: 1;
+}
+.homeSliderV2 .swiper-slide-active .info h4{
+  right:0px !important;
+  opacity: 1;
+}
+.homeSliderV2 .swiper-slide-active .info h3{
+  right:0px !important;
+  opacity: 1;
+}
+
+.MuiCheckbox-root{
+  padding: 6px !important;
+}
+
+.ReactCollapse--collapse {
+  transition: height 400ms;
+}
+
+
+.itemViewActions button.active svg{
+  color: #2d4739 !important;
+  opacity: 1;
+}
+
+.Mui-selected.MuiPaginationItem-page{
+  background: #2d4739 !important;
+  color: #fff !important;
+}
+.zoomProductSliderThumbs .swiper-wrapper{
+  padding-top: 35px !important;
+  
+}
+
+.zoomProductSliderThumbs .swiper-button-next{
+  bottom: 0px !important;
+  right: inherit !important;
+  top: inherit !important;
+  width: 100% !important;
+  height: 30px !important;
+  border-radius: 0px !important ;
+}
+
+.zoomProductSliderThumbs .swiper-button-next::after{
+  transform: rotate(90deg);
+}
+
+.zoomProductSliderThumbs .swiper-button-prev{
+  top: 20px !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 30px !important;
+  border-radius: 0px !important ;
+}
+
+.zoomProductSliderThumbs .swiper-button-prev::after{
+  transform: rotate(90deg);
+}
+
+.productContent .actions button{
+  min-width: 40px !important;
+  height: 30px !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important; 
+  color: rgba(0, 0, 0, 0.7);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none ;
+}
+
+
+.reviewScroll::-webkit-scrollbar-thumb{
+  background: #ccc !important;
+}
+.reviewScroll::-webkit-scrollbar{
+  width: 5px !important;
+}
+
+
+.cartPanel .MuiPaper-root {
+  width: 400px;
+  overflow:hidden
+}
+
+#size-menu .MuiButtonBase-root {
+  font-size: 12px !important;
+}
+
+.otpBox input{
+  border :1px solid rgba(0, 0, 0, 0.3) !important;
+  outline: none !important;
+  border-radius: 4px;
+}
+.otpBox input:focus{
+  border: 1px solid rgba(0, 0, 0, 0.7) !important;
+}
+
+.otpPage .container {
+  height:90vh;
+  display: flex;
+}
+
+.scroll::-webkit-scrollbar{width: 5px !important;}
+.scroll::-webkit-scrollbar-thumb{background:#ccc !important;}
+
+
+#account-menu .MuiPaper-root{
+  width: 250px !important;
+}
