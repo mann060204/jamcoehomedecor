@@ -17,12 +17,14 @@ import { MdClose } from "react-icons/md";
 import { ProductDetailsComponents } from "./components/ProductDetails";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
-import CartPage from "./components/Cart";
+import CartPage from "./Pages/Cart";
 import Verify from "./Pages/Verify";
 import ForgotPassword from "./Pages/ForgotPassword";
 import toast, { Toaster } from 'react-hot-toast';
-import Checkout from "./components/Checkout";
+import Checkout from "./Pages/Checkout";
 import MyAccount from "./Pages/MyAccount";
+import MyList from "./Pages/Mylist";
+import Orders from "./Pages/Orders";
 
 
 const MyContext = createContext();
@@ -86,6 +88,8 @@ const openAlertBox = (status, msg) => {
             <Route path={"/forgot-password"} exact={true} element={<ForgotPassword />} />
             <Route path={"/checkout"} exact={true} element={<Checkout />} />
             <Route path={"/my-account"} exact={true} element={<MyAccount />} />
+            <Route path={"/my-list"} exact={true} element={<MyList />} />
+            <Route path={"/my-order"} exact={true} element={<Orders />} />
           </Routes>
           <Footer />
         </MyContext.Provider>
