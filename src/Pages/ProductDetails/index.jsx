@@ -6,12 +6,11 @@ import { Link as RouterLink } from "react-router-dom";
 import { Link, Breadcrumbs, Button } from "@mui/material";
 import Rating from "@mui/material/Rating";
 
-import TextField from '@mui/material/TextField';
+import TextField from "@mui/material/TextField";
 import ProductsSlider from "../../components/ProductsSlider";
 import { ProductDetailsComponents } from "../../components/ProductDetails";
 
 const ProductDetails = () => {
-  
   const [activeTab, setActiveTab] = useState(0);
 
   return (
@@ -55,7 +54,7 @@ const ProductDetails = () => {
           </div>
 
           <div className="productContent w-[60%] pr-10 pl-10 ">
-            <ProductDetailsComponents/>
+            <ProductDetailsComponents />
           </div>
         </div>
 
@@ -196,134 +195,142 @@ const ProductDetails = () => {
             </div>
           )}
 
-          {
-            activeTab===2 &&
+          {activeTab === 2 && (
             <div className="shadow-md w-[80%] py-5 px-8 rounded-md">
-            <div className="w-full productREviewsContainer">
-              <h2 className="text-[20px]">Customer Questions & Answers</h2>
+              <div className="w-full productREviewsContainer">
+                <h2 className="text-[20px]">Customer Questions & Answers</h2>
 
-              <div className="reviewScroll w-full max-h-[300px] overflow-y-scroll overflow-x-hidden mt-5 pr-5">
+                <div className="reviewScroll w-full max-h-[300px] overflow-y-scroll overflow-x-hidden mt-5 pr-5">
+                  <div className="review pb-5 pt-2 border-b border-[rgba(0,0,0,0.1)] w-full flex items-center justify-between">
+                    <div className="info w-[60%] flex items-center gap-3">
+                      <div className="img w-[80px] h-[80px] overflow-hidden rounded-full">
+                        <img
+                          src="https://media.licdn.com/dms/image/v2/D4D03AQFChbM09OHueQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718257964816?e=1756339200&v=beta&t=cLZ3ZHNlm5XkBTZKpYOhhdSM4deFcdpIo0FCQ5xnos4"
+                          className="w-full"
+                        />
+                      </div>
+                      <div className="w-[80%]">
+                        <h4 className="!text-[16px]">Mann Monpara</h4>
+                        <h5 className="!text-[14px] !mb-0">25-06-2025</h5>
+                        <p className="!mt-0 !mb-0">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum has been the
+                          industry's standard dummy text ever since the 1500s,
+                          when an unknown p
+                        </p>
+                      </div>
+                    </div>
+                    <Rating name="size-small" defaultValue={4} readOnly />
+                  </div>
+                  <div className="review pb-5 pt-2 border-b border-[rgba(0,0,0,0.1)] w-full flex items-center justify-between">
+                    <div className="info w-[60%] flex items-center gap-3">
+                      <div className="img w-[80px] h-[80px] overflow-hidden rounded-full">
+                        <img
+                          src="https://media.licdn.com/dms/image/v2/D4D03AQFChbM09OHueQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718257964816?e=1756339200&v=beta&t=cLZ3ZHNlm5XkBTZKpYOhhdSM4deFcdpIo0FCQ5xnos4"
+                          className="w-full"
+                        />
+                      </div>
+                      <div className="w-[80%]">
+                        <h4 className="!text-[16px]">Mann Monpara</h4>
+                        <h5 className="!text-[14px] !mb-0">25-06-2025</h5>
+                        <p className="!mt-0 !mb-0">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum has been the
+                          industry's standard dummy text ever since the 1500s,
+                          when an unknown p
+                        </p>
+                      </div>
+                    </div>
+                    <Rating name="size-small" defaultValue={4} readOnly />
+                  </div>
+                  <div className="review pb-5 pt-2 border-b border-[rgba(0,0,0,0.1)] w-full flex items-center justify-between">
+                    <div className="info w-[60%] flex items-center gap-3">
+                      <div className="img w-[80px] h-[80px] overflow-hidden rounded-full">
+                        <img
+                          src="https://media.licdn.com/dms/image/v2/D4D03AQFChbM09OHueQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718257964816?e=1756339200&v=beta&t=cLZ3ZHNlm5XkBTZKpYOhhdSM4deFcdpIo0FCQ5xnos4"
+                          className="w-full"
+                        />
+                      </div>
+                      <div className="w-[80%]">
+                        <h4 className="!text-[16px]">Mann Monpara</h4>
+                        <h5 className="!text-[14px] !mb-0">25-06-2025</h5>
+                        <p className="!mt-0 !mb-0">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum has been the
+                          industry's standard dummy text ever since the 1500s,
+                          when an unknown p
+                        </p>
+                      </div>
+                    </div>
+                    <Rating name="size-small" defaultValue={4} readOnly />
+                  </div>
+                  <div className="review pb-5 pt-2 border-b border-[rgba(0,0,0,0.1)] w-full flex items-center justify-between">
+                    <div className="info w-[60%] flex items-center gap-3">
+                      <div className="img w-[80px] h-[80px] overflow-hidden rounded-full">
+                        <img
+                          src="https://media.licdn.com/dms/image/v2/D4D03AQFChbM09OHueQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718257964816?e=1756339200&v=beta&t=cLZ3ZHNlm5XkBTZKpYOhhdSM4deFcdpIo0FCQ5xnos4"
+                          className="w-full"
+                        />
+                      </div>
+                      <div className="w-[80%]">
+                        <h4 className="!text-[16px]">Mann Monpara</h4>
+                        <h5 className="!text-[14px] !mb-0">25-06-2025</h5>
+                        <p className="!mt-0 !mb-0">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum has been the
+                          industry's standard dummy text ever since the 1500s,
+                          when an unknown p
+                        </p>
+                      </div>
+                    </div>
+                    <Rating name="size-small" defaultValue={4} readOnly />
+                  </div>
+                  <div className="review pb-5 pt-2 border-b border-[rgba(0,0,0,0.1)] w-full flex items-center justify-between">
+                    <div className="info w-[60%] flex items-center gap-3">
+                      <div className="img w-[80px] h-[80px] overflow-hidden rounded-full">
+                        <img
+                          src="https://media.licdn.com/dms/image/v2/D4D03AQFChbM09OHueQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718257964816?e=1756339200&v=beta&t=cLZ3ZHNlm5XkBTZKpYOhhdSM4deFcdpIo0FCQ5xnos4"
+                          className="w-full"
+                        />
+                      </div>
+                      <div className="w-[80%]">
+                        <h4 className="!text-[16px]">Mann Monpara</h4>
+                        <h5 className="!text-[14px] !mb-0">25-06-2025</h5>
+                        <p className="!mt-0 !mb-0">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum has been the
+                          industry's standard dummy text ever since the 1500s,
+                          when an unknown p
+                        </p>
+                      </div>
+                    </div>
+                    <Rating name="size-small" defaultValue={4} readOnly />
+                  </div>
+                </div>
+                <br />
 
-                <div className="review pb-5 pt-2 border-b border-[rgba(0,0,0,0.1)] w-full flex items-center justify-between">
-                  <div className="info w-[60%] flex items-center gap-3">
-                    <div className="img w-[80px] h-[80px] overflow-hidden rounded-full">
-                      <img src="https://media.licdn.com/dms/image/v2/D4D03AQFChbM09OHueQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718257964816?e=1756339200&v=beta&t=cLZ3ZHNlm5XkBTZKpYOhhdSM4deFcdpIo0FCQ5xnos4" className="w-full"/>
-                    </div>
-                    <div className="w-[80%]">
-                      <h4 className="!text-[16px]">Mann Monpara</h4>
-                      <h5 className="!text-[14px] !mb-0">25-06-2025</h5>
-                      <p className="!mt-0 !mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown p</p>
-                    </div>
-                   
-                  </div>
-                   <Rating
-                      name="size-small"
-                      defaultValue={4}
-                      readOnly
+                <div className="reviewForm bg-[#fafafa] p-4 rounded-md">
+                  <h2 className="text-[18px]">Add a Review</h2>
+                  <form className="w-full mt-5">
+                    <TextField
+                      id="outlined-multiline-flexible"
+                      label="Your Review"
+                      className="w-full"
+                      multiline
+                      rows={5}
                     />
+                    <br />
+                    <br />
+                    <Rating name="size-small" defaultValue={4} />
+
+                    <div className="flex items-center mt-5">
+                      <Button className="btn-org">Submit Review</Button>
+                    </div>
+                  </form>
                 </div>
-                <div className="review pb-5 pt-2 border-b border-[rgba(0,0,0,0.1)] w-full flex items-center justify-between">
-                  <div className="info w-[60%] flex items-center gap-3">
-                    <div className="img w-[80px] h-[80px] overflow-hidden rounded-full">
-                      <img src="https://media.licdn.com/dms/image/v2/D4D03AQFChbM09OHueQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718257964816?e=1756339200&v=beta&t=cLZ3ZHNlm5XkBTZKpYOhhdSM4deFcdpIo0FCQ5xnos4" className="w-full"/>
-                    </div>
-                    <div className="w-[80%]">
-                      <h4 className="!text-[16px]">Mann Monpara</h4>
-                      <h5 className="!text-[14px] !mb-0">25-06-2025</h5>
-                      <p className="!mt-0 !mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown p</p>
-                    </div>
-                   
-                  </div>
-                   <Rating
-                      name="size-small"
-                      defaultValue={4}
-                      readOnly
-                    />
-                </div>
-                <div className="review pb-5 pt-2 border-b border-[rgba(0,0,0,0.1)] w-full flex items-center justify-between">
-                  <div className="info w-[60%] flex items-center gap-3">
-                    <div className="img w-[80px] h-[80px] overflow-hidden rounded-full">
-                      <img src="https://media.licdn.com/dms/image/v2/D4D03AQFChbM09OHueQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718257964816?e=1756339200&v=beta&t=cLZ3ZHNlm5XkBTZKpYOhhdSM4deFcdpIo0FCQ5xnos4" className="w-full"/>
-                    </div>
-                    <div className="w-[80%]">
-                      <h4 className="!text-[16px]">Mann Monpara</h4>
-                      <h5 className="!text-[14px] !mb-0">25-06-2025</h5>
-                      <p className="!mt-0 !mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown p</p>
-                    </div>
-                   
-                  </div>
-                   <Rating
-                      name="size-small"
-                      defaultValue={4}
-                      readOnly
-                    />
-                </div>
-                <div className="review pb-5 pt-2 border-b border-[rgba(0,0,0,0.1)] w-full flex items-center justify-between">
-                  <div className="info w-[60%] flex items-center gap-3">
-                    <div className="img w-[80px] h-[80px] overflow-hidden rounded-full">
-                      <img src="https://media.licdn.com/dms/image/v2/D4D03AQFChbM09OHueQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718257964816?e=1756339200&v=beta&t=cLZ3ZHNlm5XkBTZKpYOhhdSM4deFcdpIo0FCQ5xnos4" className="w-full"/>
-                    </div>
-                    <div className="w-[80%]">
-                      <h4 className="!text-[16px]">Mann Monpara</h4>
-                      <h5 className="!text-[14px] !mb-0">25-06-2025</h5>
-                      <p className="!mt-0 !mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown p</p>
-                    </div>
-                   
-                  </div>
-                   <Rating
-                      name="size-small"
-                      defaultValue={4}
-                      readOnly
-                    />
-                </div>
-                <div className="review pb-5 pt-2 border-b border-[rgba(0,0,0,0.1)] w-full flex items-center justify-between">
-                  <div className="info w-[60%] flex items-center gap-3">
-                    <div className="img w-[80px] h-[80px] overflow-hidden rounded-full">
-                      <img src="https://media.licdn.com/dms/image/v2/D4D03AQFChbM09OHueQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718257964816?e=1756339200&v=beta&t=cLZ3ZHNlm5XkBTZKpYOhhdSM4deFcdpIo0FCQ5xnos4" className="w-full"/>
-                    </div>
-                    <div className="w-[80%]">
-                      <h4 className="!text-[16px]">Mann Monpara</h4>
-                      <h5 className="!text-[14px] !mb-0">25-06-2025</h5>
-                      <p className="!mt-0 !mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown p</p>
-                    </div>
-                   
-                  </div>
-                   <Rating
-                      name="size-small"
-                      defaultValue={4}
-                      readOnly
-                    />
-                </div>
-                
-                
-                
-                
               </div>
-              <br/>
-
-              <div className="reviewForm bg-[#fafafa] p-4 rounded-md">
-                <h2 className="text-[18px]">Add a Review</h2>
-                <form className="w-full mt-5">
-                   <TextField
-          id="outlined-multiline-flexible"
-          label="Your Review"
-          className="w-full"
-          multiline
-          rows={5}
-        />
-<br/><br/>
-            <Rating name="size-small" defaultValue={4}/>
-
-            <div className="flex items-center mt-5">
-              <Button className="btn-org">Submit Review</Button>
             </div>
-
-                </form>
-              </div>
-
-            </div>
-            </div>
-          }
+          )}
         </div>
 
         <div className="container pt-10">
